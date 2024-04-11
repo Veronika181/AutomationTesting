@@ -22,5 +22,5 @@ main_page.validity_card()
 main_page.click_continue()
 main_page.emails()
 
-#napsat funkci na cookies
+#napsat funkci na cookies cookie_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.XPATH, "xpath_tlacitka_s_cookies")))
 
