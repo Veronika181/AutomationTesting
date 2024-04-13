@@ -1,7 +1,10 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 
 class LoginPage:
+
     def __init__(self, driver):
         self.driver = driver
 
@@ -23,3 +26,10 @@ class LoginPage:
 
     def click_continue(self):
         self.driver.find_element(By.XPATH, "//span[contains(text(),'Pokračovat')]").click()
+
+    #def accept_cookies(self):
+        #self.driver.find_element(*LoginPage.cookies).click()
+
+    def accept_cookies(self):
+        time.sleep(6)
+        self.driver.find_element(By.XPATH, "//button[contains(@class,'acceptCookies')]").click()
