@@ -21,8 +21,9 @@ main_page.select_fuel_type()
 login_page.click_continue()
 main_page.select_kind_card()
 main_page.validity_card()
+
 main_page.click_continue()
-#main_page.emails()
+main_page.emails()
 
 
 
