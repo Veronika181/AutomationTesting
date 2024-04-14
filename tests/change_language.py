@@ -9,6 +9,5 @@ driver = webdriver.Chrome()
 login_page = LoginPage(driver)
 
 
-
 def changelanguage(self):
     self.driver.find_element(By.ID, "edaz-lang-select").click()
