@@ -18,13 +18,18 @@ login_page.click_continue()
 
 main_page = MainPage(driver)
 main_page.select_fuel_type()
-login_page.click_continue()
+main_page.click_continue()
 main_page.select_kind_card()
 main_page.validity_card()
-
 main_page.click_continue()
 main_page.emails()
-
+main_page.emails()
+main_page.check_box()
+main_page.mobilenumber()
+main_page.click_continue()
+main_page.conditions()
+main_page.click_continue()
+main_page.cancelpayment()
 
 
 

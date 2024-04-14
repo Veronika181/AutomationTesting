@@ -24,13 +24,32 @@ class MainPage:
 
     def select_kind_card(self):
         self.driver.find_element(By.XPATH, "//h5[contains(text(),'Roční')]").click()
-
     def validity_card(self):
         date = datetime.today()
         self.driver.find_element(By.ID, "valid-since-input").send_keys(date.strftime("%d.%m.%Y"))
 
     def emails(self):
-        self.driver.find_element(By.XPATH, "//input[@id='email-input']").send_keys("jannovak@seznam.cz")
+        self.driver.find_element(By.ID, "email-input").send_keys("jannovak@seznam.cz")
+
 
     def click_continue(self):
         self.driver.find_element(By.XPATH, "//span[contains(text(),'Pokračovat')]").click()
+
+    def checkbox(self):
+        self.driver.find_element(By.ID, "//input[@id = 'notificationEnabled-true']").click()
+
+    def againcheckbox(self):
+        self.driver.find_element(By.ID, "custom-control-input").click()
+
+    def mobilenumber(self):
+        self.driver.find_element(By.XPATH, "kit__input-phone").click()
+
+    def payment(self):
+        self.driver.find_element(By. XPATH, "//h5[contains(text(),'Platební kartou')]")
+        #class ="mb-3 col-auto" > Platební kartou < / div >
+
+    def conditions(self):
+        self.driver.find_element(By. ID, "terms-and-conditions-check").click()
+
+    def cancelpayment(self):
+        self.driver.find_element(By.ID, "button -with-icon button-cancel").click()
