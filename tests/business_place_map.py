@@ -5,3 +5,6 @@ from pages import main
 from pages.LoginPage import LoginPage
 from pages.MainPage import MainPage
 
+
+driver = webdriver.Chrome()
+login_page = LoginPage(driver)

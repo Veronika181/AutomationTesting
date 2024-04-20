@@ -28,3 +28,14 @@ class LoginPage:
     def accept_cookies(self):
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//button[contains(@class,'acceptCookies')]").click()
+
+    def verify_validity(self):
+        self.driver.find_element(By.XPATH, "//span[contains(text(), 'Ověřit platnost')]").click()
+
+#napsat tu vše k bulkpurchase_card
+login_page.navigate_to_bulogin_page.email
+login_page.email
+login_page.checkboxnotice
+login_page.sameemailconfirmation
+login_page.telephonenumber
+login_page.click_continue()lkpurchasecard
