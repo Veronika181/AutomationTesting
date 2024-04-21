@@ -51,13 +51,19 @@ class MainPage:
     def conditions(self):
         self.driver.find_element(By.XPATH, "//input[@id='_termsAgreement-true']").click()
 
-#přepiš jako def
-main_page.SPZ
-main_page.propulsionofvehicles
-main_page.stampsvalidity
-main_page.daystamps
-main_page.newsetofstamps
-main_page.continuebulkpurchase
-main_page.againcontinue
-main_page.pay
-main_page.agreetermspayment
+    def SPZ(self):?
+        self.driver.find_element
+    def propulsionofvehicles(self):
+        self.driver.find_element
+    def daystamps(self):
+        self.driver.find_element
+    def newsetofstamps(self):
+        self.driver.find_element
+    def continuebulkpurchase(self):
+        self.driver.find_element
+    def againcontinue(self):
+        self.driver.find_element
+    def pay(self):
+        self.driver.find_element
+    def agreetermpayment(self):
+        self.driver.find_element
