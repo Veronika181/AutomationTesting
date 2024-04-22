@@ -18,7 +18,7 @@ class LoginPage:
     def enter_SPZ(self, SPZ_number):
         self.driver.find_element(By.ID, "license-plate-input").send_keys(SPZ_number)
         self.driver.find_element(By.ID, "license-plate-confirmation-input").send_keys(SPZ_number)
-
+        self.driver.find_element(By.XPATH, "//input[@class='order-0 flex-grow-1']").send_keys("3M02343")
     def enter_license_plate(self, plate_number):
         self.driver.find_element(By.ID, "license-plate-input").send_keys(plate_number)
 
@@ -32,15 +32,16 @@ class LoginPage:
     def verify_validity(self):
         self.driver.find_element(By.XPATH, "//span[contains(text(), 'Ověřit platnost')]").click()
 
-    def navigate_to_bulogin_page
+    def navigate_to_bulkpurchasecard(self):
+        self.driver.get("https://edalnice.cz/hromadny-nakup")
 
-    def email
+    #def email
 
-    def sameemailconfirmation
+    #def sameemailconfirmation
 
-    def telephonenumber
+    #def telephonenumber
 
-    def click_continue():
+    #def click_continue():
 
 
 
