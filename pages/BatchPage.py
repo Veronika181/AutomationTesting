@@ -1,7 +1,6 @@
 from datetime import datetime
 import time
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 
@@ -17,10 +16,10 @@ class BatchPage:
         time.sleep(2)
         self.driver.find_element(By.XPATH, "//button[contains(@class,'acceptCookies')]").click()
 
+
     def enter_SPZ(self):
-        self.driver.find_element(By.XPATH, "//input[@class='order-0 flex-grow-1']").click()
-        self.driver.find_element(By.XPATH, "//input[@class='order-0 flex-grow-1']").send_keys("3M40045")
-        self.driver.find_element(By.XPATH, "//input[@class='order-0 flex-grow-1']").send_keys(Keys.ENTER)
+        spz_element = self.driver.find_element(By.XPATH, "//span[contains(@class, 'license-plate-frame']")
+        spz_element.send_keys("6T49999")
 
     def select_fuel_type(self):
         fuel_type = WebDriverWait(self.driver, 15).until(
