@@ -32,15 +32,9 @@ class LoginPage:
     def verify_validity(self):
         self.driver.find_element(By.XPATH, "//span[contains(text(), 'Ověřit platnost')]").click()
 
-    def navigate_to_bulogin_page
 
-    def email
 
-    def sameemailconfirmation
 
-    def telephonenumber
-
-    def click_continue():
 
 
 

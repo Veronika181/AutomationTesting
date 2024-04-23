@@ -51,19 +51,3 @@ class MainPage:
     def conditions(self):
         self.driver.find_element(By.XPATH, "//input[@id='_termsAgreement-true']").click()
 
-    def SPZ(self):?
-        self.driver.find_element
-    def propulsionofvehicles(self):
-        self.driver.find_element
-    def daystamps(self):
-        self.driver.find_element
-    def newsetofstamps(self):
-        self.driver.find_element
-    def continuebulkpurchase(self):
-        self.driver.find_element
-    def againcontinue(self):
-        self.driver.find_element
-    def pay(self):
-        self.driver.find_element
-    def agreetermpayment(self):
-        self.driver.find_element
