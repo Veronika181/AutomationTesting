@@ -1,9 +1,6 @@
 import time
-
 from selenium import webdriver
-
 from pages.BatchPage import BatchPage
-
 
 driver = webdriver.Chrome()
 batch_page = BatchPage(driver)
@@ -18,6 +15,15 @@ batch_page.validity_card()
 batch_page.select_kind_card()
 batch_page.click_continue()
 batch_page.click_continue()
+batch_page.emails()
+batch_page.emailsrepeat()
+batch_page.checkbox()
+batch_page.emailcheckconfirm()
+batch_page.mobilenumber()
+batch_page.click_continue()
+batch_page.payment()
+batch_page.conditions()
+batch_page.payButtonExist()
 
 
 
