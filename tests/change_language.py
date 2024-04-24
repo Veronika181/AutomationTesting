@@ -1,13 +1,7 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-
-from pages import main
-from pages.LoginPage import LoginPage
-from pages.MainPage import MainPage
+from pages.ChangelanguagePage import ChangelanguagePage
 
 driver = webdriver.Chrome()
-login_page = LoginPage(driver)
+change_language = ChangelanguagePage(driver)
 
-
-def changelanguage(self):
-    self.driver.find_element(By.ID, "edaz-lang-select").click()
+change_language.CS()

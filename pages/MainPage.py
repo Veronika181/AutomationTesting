@@ -1,8 +1,7 @@
-import email
-from telnetlib import EC
-
-from selenium.webdriver.common.by import By
+import time
 from datetime import datetime
+from telnetlib import EC
+from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -21,7 +20,7 @@ class MainPage:
         self.driver.find_element(By.XPATH, "//h5[contains(text(),'Roční')]").click()
 
     def validity_card(self):
-        date = datetime(2024, 4, 20)
+        date = datetime(2024, 4, 28)
         self.driver.find_element(By.ID, "valid-since-input").send_keys(date.strftime("%d.%m.%Y"))
 
     def emails(self):
@@ -50,4 +49,31 @@ class MainPage:
 
     def conditions(self):
         self.driver.find_element(By.XPATH, "//input[@id='_termsAgreement-true']").click()
+
+    def navigate_to_buynewcard_page(self):
+        self.driver.get("https://edalnice.cz/jednoduchy-nakup/index.html#/eshop/order/license")
+
+    def navigate_to_verifycard(self):
+        self.driver.get("https://edalnice.cz/index.html#/validation")
+
+    def enter_SPZ(self, SPZ_number):
+        self.driver.find_element(By.ID, "license-plate-input").send_keys(SPZ_number)
+        self.driver.find_element(By.ID, "license-plate-confirmation-input").send_keys(SPZ_number)
+
+    def enter_license_plate(self, plate_number):
+        self.driver.find_element(By.ID, "license-plate-input").send_keys(plate_number)
+
+    def click_continue(self):
+        self.driver.find_element(By.XPATH, "//span[contains(text(),'Pokračovat')]").click()
+
+
+    def verify_validity(self):
+        self.driver.find_element(By.XPATH, "//span[contains(text(), 'Ověřit platnost')]").click()
+
+
+
+
+
+
+
 
