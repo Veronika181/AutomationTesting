@@ -20,3 +20,6 @@ The Selenium tests included in this project cover various steps of the purchase 
 **Customization**
 You can customize and extend the tests by editing the steps in the Selenium  extension according to your specific requirements.
 
+**Author**
+Veronika Obrtelová
+Linkedln profile: https://www.linkedin.com/in/veronika-obrtelová/
